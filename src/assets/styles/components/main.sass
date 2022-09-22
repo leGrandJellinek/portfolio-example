@@ -1,0 +1,87 @@
+.main
+    display: flex
+    flex-direction: column
+    gap: 100px
+    &__services
+        &-container 
+            @extend .container
+        &-title 
+            max-width: 246px
+            width: 100%
+            margin: 15px 0 50px 0 
+        &-block
+            display: flex
+            gap: 30px
+        &-item 
+            display: flex
+            flex-direction: column
+            gap: 20px
+        &-icon 
+            background: url("@/assets/images/main/icons-bg.png") no-repeat center / cover 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 62px
+            height: 60px
+        &-info 
+            display: flex
+            align-items: center
+            gap: 20px   
+        &-descr 
+            font-size: 24px
+            line-height: 32px
+            color: #25202F
+        &-text 
+            font-weight: $Regular
+            font-size: 16px
+            line-height: 32px
+            color: #47444E
+    &__portfolio
+        padding-top: 50px
+        padding-bottom: 68px  
+        background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%)
+        &-container 
+            @extend .container
+        &-info 
+            display: flex
+            justify-content: space-between
+            align-items: center 
+        &-more 
+            display: flex
+            gap: 15px
+            & span 
+                font-size: 24px
+                line-height: 32px
+                text-decoration-line: underline
+                color: #25202F
+        &-title
+            max-width: 204px
+            width: 100%
+            margin: 15px 0 30px 0
+        &-block 
+            display: flex
+            gap: 30px
+    &__clients
+        padding-bottom: 50px 
+        &-container 
+            @extend  .container
+        &-block 
+            display: flex
+            gap: 50px
+            justify-content: center
+        &-item 
+            width: 170px
+            height: 170px
+            display: flex
+            flex-direction: column
+            align-items: center 
+            justify-content: center
+            border-radius: 10px
+            gap: 30px
+        &-name 
+            font-size: 18px
+            line-height: 24px
+        &-title 
+            width: 140px
+            margin: 15px 0 44px 0
+    

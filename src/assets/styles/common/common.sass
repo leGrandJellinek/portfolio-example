@@ -1,0 +1,14 @@
+$Regular: 400
+$Medium: 500
+$Bold:700
+
+$RedHatDisplay: ("Regular", $Regular), ("Medium", $Medium), ("Bold", $Bold)
+
+@each $name, $weight in $RedHatDisplay
+    @font-face 
+        font-family: "RHD"
+        src: url("@/assets/fonts/RedHatDisplay-#{$name}.ttf")
+        font-weight: $weight
+
+
+    
