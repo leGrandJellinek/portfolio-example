@@ -5,9 +5,10 @@ button.purple-btn
 </template>
 
 <script lang="ts">
-export default {
+import {defineComponent} from "vue"
+export default defineComponent({
     name: "purple-btn"
-}
+})
 </script>
 
 <style lang="sass" scoped>

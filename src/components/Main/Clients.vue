@@ -14,12 +14,13 @@ section.main__clients
 <script lang="ts">
 import ClientsItem from "@/components/Main/ClientsItem.vue"
 import {mapGetters} from "vuex"
-export default {
+import {defineComponent} from "vue"
+export default defineComponent({
     components: {
         ClientsItem
     },
     computed: {
         ...mapGetters(["getClientList"])
     }
-}
+})
 </script>

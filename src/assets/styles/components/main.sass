@@ -84,4 +84,162 @@
         &-title 
             width: 140px
             margin: 15px 0 44px 0
-    
+    &__blog
+        &-container 
+            @extend .container 
+            display: flex
+            gap: 25px
+        &-block 
+            display: flex
+            gap: 30px
+        &-item 
+            position: relative
+            width: 255px
+            background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #25202F 100%)
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            height: 350px
+        &-bg 
+            position: absolute
+            z-index: -999999
+        &-main-item 
+            max-width: 350px
+            & h2 
+                color: #8643DC
+                margin-top: 20px
+                margin-bottom: 10px  
+            & p 
+                color: #000000
+        &-info 
+            position: relative
+            bottom: 30px
+            left: 20px
+            width: 197px
+        &-descr 
+            font-size: 20px
+            line-height: 26px
+            color: #FFFFFF
+            font-weight: $Bold
+        &-date
+            font-size: 16px
+            color: #FFFFFF
+            line-height: 21px
+    &__testimonials
+        padding-top: 50px
+        padding-bottom: 63px
+        background: linear-gradient(180deg, rgba(203, 163, 255, 0.2) 0%, rgba(197, 255, 176, 0.2) 100%)
+        &-container 
+            @extend .container
+        &-title 
+            margin-bottom: 30px
+            width: 217px
+        &-block 
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 25px
+            position: relative
+        &-info 
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 25px
+        &-text 
+            max-width: 569px
+            width: 100%
+            min-width: 330px
+            text-align: center
+            font-weight: 500
+            font-size: 16px
+            line-height: 32px
+            color: #636066
+        &-people 
+            display: flex
+            flex-direction: column
+            & img 
+                border-radius: 15px
+        &-name 
+            margin: 19px 0 5px 0
+            font-size: 20px
+            line-height: 26px
+        &-job 
+            font-weight: 400
+            font-size: 16px
+            line-height: 21px
+            color: #000000
+            text-align: center
+            margin-bottom: 46px
+        &-human 
+            mix-blend-mode: luminosity
+            position: absolute
+            border-radius: 15px
+            filter: blur(2px)
+            &:nth-of-type(1)
+                left: 0
+            &:nth-of-type(2)
+                left: 120px
+                bottom: 14px
+            &:nth-of-type(3)
+                right: 120px
+                bottom: 14px
+            &:nth-of-type(4)
+                right: 0
+        &-dots 
+            display: flex
+            gap: 20px
+        &-dot 
+            width: 10px
+            height: 10px
+            border: 1px solid #DEBAD9
+            border-radius: 50%
+            &.active 
+                background: #8643DC
+    &__contact
+        padding-top: 50px
+        background: linear-gradient(180deg, rgba(187, 133, 255, 0.166) -8.54%, rgba(255, 244, 251, 0.2) 100%)
+        &-container 
+            @extend .container 
+        &-info 
+            display: flex
+            justify-content: space-between
+            margin-bottom: 50px 
+        &-title 
+            margin-top: 20px 
+            max-width: 512px
+            min-width: 320px
+            font-weight: 500
+            font-size: 36px
+            line-height: 52px
+            font-family: Roboto
+        &-mail 
+            & a 
+                font-weight: 400
+                font-size: 24px
+                line-height: 28px
+                text-decoration-line: underline
+                text-transform: lowercase
+                color: #8643DC
+                font-weight: Roboto
+        &-block 
+            display: flex
+            flex-direction: column 
+            gap: 43px
+            margin-bottom: 30px 
+        &-input
+            width: 100%
+            padding: 17px 0 17px 0
+            border-bottom: 1px #DAD2E3 solid
+            font-weight: 400
+            font-size: 20px
+            line-height: 26px
+        &-send 
+            display: flex
+            justify-content: space-between
+        &-icons 
+            display: flex
+            align-items: center
+            gap: 17px
+        &-btn 
+            cursor: pointer
+        

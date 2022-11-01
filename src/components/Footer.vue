@@ -12,10 +12,10 @@ footer.footer
 <script lang="ts">
 
 import {mapGetters} from "vuex"
-
-export default {
+import {defineComponent} from "vue"
+export default defineComponent({
     computed: {
         ...mapGetters(["getFooterSocial"])
     }
-}
+})
 </script>

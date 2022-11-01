@@ -4,9 +4,10 @@ h2.title
 </template>
 
 <script lang="ts">
-export default {
+import {defineComponent} from "vue"
+export default defineComponent({
     name: "normal-title"
-}
+})
 </script>
 
 <style lang="sass" scoped>

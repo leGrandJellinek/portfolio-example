@@ -11,15 +11,16 @@ header.header
                     purple-btn Let’s Talk
         .header__right
             img(src="@/assets/images/header/header__img.png")
+            img.header__right-dgroup(src="@/assets/images/header/header__dots-group.png")
 </template>
 
 <script lang="ts">
 
 import Navbar from "@/components/Navbar.vue"
-
-export default {
+import {defineComponent} from "vue"
+export default defineComponent({
     components: {
         Navbar,
     }
-}
+})
 </script>

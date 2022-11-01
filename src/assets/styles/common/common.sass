@@ -10,5 +10,12 @@ $RedHatDisplay: ("Regular", $Regular), ("Medium", $Medium), ("Bold", $Bold)
         src: url("@/assets/fonts/RedHatDisplay-#{$name}.ttf")
         font-weight: $weight
 
+$Roboto: ("Regular", $Regular), ("Medium", $Medium)
+
+@each $name, $weight in $Roboto 
+    @font-face 
+        font-family: "Roboto"
+        src: url("@/assets/fonts/Roboto-#{$name}.ttf")
+        font-weight: $weight
 
     

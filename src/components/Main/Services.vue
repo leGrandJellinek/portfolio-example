@@ -14,13 +14,14 @@ section.main__services
 
 import {mapGetters} from "vuex"
 import ServicesItem from "@/components/Main/ServicesItem.vue";
+import {defineComponent} from "vue"
 
-export default {
+export default defineComponent({
     components:{
         ServicesItem,
     },
     computed: {
         ...mapGetters(["getServicesList"])
     }
-}
+})
 </script>
